@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The PC Medic | Professional Computer Repair Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #ffffff;
+            padding: 80px 0;
+            text-align: center;
+            border-bottom: 4px solid #f5f5f5;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+
+        header .tagline {
+            font-size: 1.3em;
+            color: #e0e0e0;
+            font-weight: 300;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #f5f5f5;
+            padding: 20px 0;
+            border-bottom: 2px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: centre;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.05em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #666;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            text-align: centre;
+            color: #1a1a1a;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: #2d2d2d;
+        }
+
+        /* About Section */
+        #about {
+            background-color: #fafafa;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: centre;
+        }
+
+        .about-content p {
+            font-size: 1.15em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .service-card {
+            background-color: #ffffff;
+            padding: 40px 30px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-color: #2d2d2d;
+        }
+
+        .service-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .service-card p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        #contact h2::after {
+            background-color: #ffffff;
+        }
+
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: centre;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+        }
+
+        .contact-item {
+            margin: 30px 0;
+        }
+
+        .contact-item h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #e0e0e0;
+            font-weight: 400;
+        }
+
+        .contact-item a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.3em;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: #b0b0b0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0d0d0d;
+            color: #999;
+            text-align: centre;
+            padding: 30px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header .tagline {
+                font-size: 1.1em;
+            }
+
+            nav ul {
+                gap: 20px;
+                justify-content: centre;
+            }
+
+            section h2 {
+                font-size: 2em;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>The PC Medic</h1>
+            <p class="tagline">Professional Computer Repair & Support Services</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2>About The PC Medic</h2>
+            <div class="about-content">
+                <p>Welcome to The PC Medic, your trusted partner for professional computer repair and technical support services. With years of experience in diagnosing and resolving computer issues, we're dedicated to keeping your technology running smoothly.</p>
+                <p>We understand how frustrating computer problems can be, whether it's a slow system, virus infection, or hardware failure. That's why we offer reliable, efficient, and honest service to get you back up and running as quickly as possible.</p>
+                <p>Our commitment is simple: provide expert technical solutions with a personal touch, treating every computer as if it were our own. No job is too big or too small, and we always take the time to explain what's wrong and how we'll fix it.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Virus & Malware Removal</h3>
+                    <p>Comprehensive virus scanning and removal to protect your data and restore your system's performance. We eliminate all types of malicious software and help prevent future infections.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Hardware Repairs</h3>
+                    <p>Expert diagnosis and repair of hardware issues including hard drives, memory, power supplies, and other internal components. We use quality parts to ensure reliable repairs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Software Installation & Support</h3>
+                    <p>Professional installation and configuration of operating systems, applications, and drivers. We ensure everything is set up correctly and optimised for your needs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Data Recovery</h3>
+                    <p>Professional data recovery services for lost or corrupted files. We use specialised tools and techniques to retrieve your valuable data whenever possible.</p>
+                </div>
+                <div class="service-card">
+                    <h3>System Upgrades</h3>
+                    <p>Boost your computer's performance with RAM upgrades, SSD installations, and other hardware improvements. We'll help you get the most out of your system.</p>
+                </div>
+                <div class="service-card">
+                    <h3>General Maintenance</h3>
+                    <p>Regular maintenance services including system cleaning, optimisation, and tune-ups to keep your computer running at peak performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <p style="font-size: 1.15em; margin-bottom: 30px;">Have a computer problem? Get in touch today for a free consultation and quote.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <a href="mailto:medic@thepcmedic.co.uk">medic@thepcmedic.co.uk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 The PC Medic. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
